@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://code.angularjs.org/1.4.0-rc.2/angular.min.js"></script>
+    <script src = "controller.js"></script>
+  </head>
+
+  <body ng-app = "calculatorApp" ng-controller="myCtrl">
+    Input A : <input type="number" ng-model="a"/><br/><br/>
+    Input B : <input type="number" ng-model="b"/><br/><br/>
+    <button ng-click = sum()>Summate</button><br/><br/>
+    Result addition of A and B is {{$scope.result}}
+  </body>
+</html>
