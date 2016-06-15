@@ -4,10 +4,18 @@
     <script src = "controller.js"></script>
   </head>
 
-  <body ng-app = "calculatorApp" ng-controller="myCtrl">
-    Input A : <input type="number" ng-model="a"/><br/><br/>
-    Input B : <input type="number" ng-model="b"/><br/><br/>
-    <button ng-click = sum()>Summate</button><br/><br/>
-    Result addition of A and B is {{$scope.result}}
+  <body ng-app = "calculatorApp" >
+    <div ng-controller="myCtrl">
+      Input A : <input type="number" ng-model="a"/><br/><br/>
+      Input B : <input type="number" ng-model="b"/><br/><br/>
+      <button ng-click = sum()>Summate</button><br/><br/>
+      Result addition of A and B is {{$scope.result}}
+    </div>
+    <div ng-controller="lucianaCtrl">
+      <br>Get the top rated album of Luciana
+      <button ng-click = callLucianaFactory()>Get Luciana Album</button><br/><br/>
+      <br>Get the top rated album of Rihanna
+      <button ng-click = callRihannaService()>Get Rihanna Album</button><br/><br/>
+    </div>
   </body>
 </html>
