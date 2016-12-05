@@ -24,7 +24,7 @@ app.controller('myCtrl', function($scope) {
     var result = $scope.a + $scope.b;
     console.log('result of adding a and b :', result);
     //alert('result :' + result);
-    return result;
+    $scope.sum = result;
   }
 });
 
